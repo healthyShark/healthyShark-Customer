@@ -1,0 +1,66 @@
+.circle {
+    height :110px;
+    width  :110px;
+    line-height:110px;
+}
+
+.icon-desc{
+	font-size:11px;
+	margin-top:8px;
+    	padding: 0 10px 0 10px;
+}
+
+header-menu {
+	line-height: 55px;
+}
+
+
+
+.icon-text{
+  font-size:76px;
+}
+
+
+.fixed {
+	font-size      : 14px;
+    	padding-bottom : 10px;
+    	height         : 40px;
+	line-height    : 40px; 
+    	margin-bottom  : 50px;
+}
+
+
+
+.footer {
+    height:44px;
+}
+
+
+.footer-menu-icon{
+    font-size       : 20px;
+    /*Set it according to the footer height */	
+    line-height     : 44px;
+    float           : none;
+    padding-left    : 20px;
+    padding-right   : 10px;  
+    
+}   
+
+
+.footer-rupee-container{
+    font-style      : normal;
+    font-size       : 18px;
+    padding-left    : 15px;
+    padding-right   : 15px;  
+    
+}
+
+
+/*Add margin at top of main row div*/
+.main-area{
+    margin-top: 50px;      
+}
+
+
+
+

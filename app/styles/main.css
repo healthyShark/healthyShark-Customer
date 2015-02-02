@@ -1,0 +1,307 @@
+/* author :: Ravi Gupta */
+
+.circle-center {
+	position:relative;
+	text-align:center;
+	margin:0 auto;
+}
+
+.circle {
+	margin-top:25px;
+	text-align:center;
+	color:#FFF;
+	font-family:"Century Gothic";
+	border-radius:50%;
+	vertical-align:middle;
+	
+}
+.text-properties {
+	color:#777;
+	margin-top:10px;
+	font-size:0.9em;
+	margin-bottom:10px;
+}
+
+.text-properties-review {
+	margin-top:30px;
+}
+
+.text-properties-info {
+	margin-top:15px;
+	margin-bottom:20px;
+}
+
+.text-properties-health-product {
+	color:#777;
+	font-size:0.8em;
+	text-align:center;
+	
+}
+
+.div-health-product {
+	border:thick;
+	border-color:#00C;
+	padding:1px;
+}
+
+.media-health-product {
+	  border:dashed thin #ff6b6b;
+	  margin-top:10px;
+}
+.rate-original-properties-health-product {
+	color:#777;
+	font-size:1em;
+	text-decoration:line-through;
+}
+
+.rate-discounted-properties-health-product{
+	color:#777;
+	font-size:1em;
+	
+}
+.media-body-health-product {
+	text-align:center;
+}
+
+.card-detail-text-properties {
+	padding-top:28px;
+	padding-left:0px;
+}
+.rate-properties {
+	color:#777;
+	margin-top:10px;
+	font-size:1.4em;
+	margin-bottom:10px;
+	text-align:right;
+}
+#rate-properties-doctor-info {
+	color:#777;
+	margin-top:0px;
+	font-size:1.4em;
+	margin-bottom:0px;
+}
+#rate-properties-pathology-info{
+	color:#777;
+	margin-top:0px;
+	font-size:1.4em;
+	margin-bottom:0px;
+}
+#rate-properties-pathology-facilities {
+	color:#777;
+	margin-top:8px;
+	font-size:1.2em;
+	margin-bottom:0px;
+	text-align:right;
+}
+
+.name-properties {
+	color:#777;
+	margin-top:10px;
+	font-size:0.9em;
+	margin-bottom:10px;
+	text-align:right;
+}
+.product-image-properties {
+	display:block;
+    margin:auto;;
+	
+	
+}
+.circle-extralg {
+	height:1.5em;
+	width:1.5em;
+	font-size:100px;
+	
+}
+
+.circle-lg {
+	height:1.5em;
+	width:1.5em;
+	font-size:75px;
+	
+}
+
+.circle-md {
+	height:1.5em;
+	width:1.5em;
+	font-size:50px;
+	
+}
+.map-image {
+	background-image:url(../images/download.jpg);
+}
+
+.click-on-buy {
+	margin-bottom:3.5em;
+}
+
+.payment-mode {
+	margin-top:5em;
+}
+
+.progress-properties {
+	max-height:3px;
+	
+}
+.progress-div-properties {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.doctor-search-progress-bar-properties {
+	height:7px;
+}
+.intro-of-doctor-doctor-search-result {
+	margin-top:25px;
+}
+.table tr {
+	text-align:justify;
+	font-size:0.75em;
+}
+.table th {
+	text-align:justify;
+}
+.add-medicine-button {
+	float:right;
+	margin:0px 0px 10px 10px;
+}
+.apply-coupon-button {
+	float:right;
+	margin:0px 0px 10px 10px;
+}
+.next-button {
+	text-align:center;
+	margin-bottom:15px;
+}
+.delivery-button {
+	text-align:center;
+}
+
+.delivery-button-select-address {
+	float:right;
+	font-size:0.8em;
+}
+.next-button hover {
+	text-decoration:none;
+}
+
+.
+.breadcrumb-medicine-manually {
+	font-size:0.80em;
+	background-color:#FFF;
+}
+.div-enter-name-of-medicine-manaually {
+	margin-top:20px;
+	margin-right:10px;
+	margin-bottom:20px;
+	
+}
+.textbox-medicine-manaually {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+}
+
+.textbox-doctor-search-result {
+	margin-top:20px;
+}
+
+.doctor-search-decoration {
+	border-bottom:thin #bbb;
+}
+.textbox-placeorder {
+}
+
+.textarea-margin-bottom {
+	margin-bottom:3em;
+}
+.div-user-shipping-address {
+	
+	margin-top:20px;
+	margin-right:10px;
+	margin-bottom:20px;
+}
+.div-user-card-payment {
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-right:0px;
+	padding-left:15px;
+	padding-right:5px;
+}
+
+.card-image {
+	margin-top:20px; 
+	margin-bottom:20px;
+	padding-right:5px;
+	padding-left:5px;
+	alignment-adjust:central;
+}
+
+table.list-of-order-remove-border tr td {
+	border-top: none;
+}
+table.list-of-order-remove-border tr th {
+	border-top: none;
+}
+
+table.price-comparison-properties tr td {
+	text-align:center;
+	font-size:1.2em;
+	padding-top:20px;
+	padding-bottom:20px;
+
+}
+
+table.price-comparison-properties tr th {
+	
+	text-align:center;
+	font-size:1.2em;
+	padding-top:20px;
+	padding-bottom:20px;
+
+
+}
+
+.list-of-orders-total {
+	border-top:thin;
+	border-color:#000;
+}
+
+.list-of-orders-rate-properties {
+	text-align:center;
+	font-size:1.75em;
+}
+#profile-account-hr {
+	margin-bottom:0px;
+}
+#pathology-search-rating {
+	padding-left:0px;
+}
+#pathology-search-update-button {
+	padding-right:5px;
+}
+.color-one {
+	background-color:#ff4500;
+}
+.color-two
+{
+	background-color:#2f91f1;
+}
+.color-three {
+	background-color:#c6e123;
+}
+.color-four {
+	background-color:#77daac;
+}
+.color-five {
+	background-color:#ff6b6b;
+}
+.color-six {
+	background-color:#fdb813;
+}
+.color-seven {
+	background-color:#008885;
+}
+.color-eight {
+	background-color:#0f91a1;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "DrugCorner",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "backbone": "jashkenas/backbone#~1.1.2",
+    "flat-ui": "designmodo/Flat-UI#~2.2.2",
+    "jquery": "https://bitbucket.org/Better2Web/jquery.percentageloader",
+    "Metro-UI-CSS": "olton/Metro-UI-CSS#~2.0.23",
+    "jquery-ui": "components/jqueryui#~1.11.2",
+    "nprogress": "rstacruz/nprogress#~0.1.6",
+    "Font-Awesome": "https://github.com/FortAwesome/Font-Awesome.git"
+  }
+}

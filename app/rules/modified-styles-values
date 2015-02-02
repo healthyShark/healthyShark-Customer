@@ -1,0 +1,71 @@
+   .circle {
+        height         : 170px; 
+        width          : 170px;
+        line-height    : 170px;
+    }
+    
+    .icon-text{
+        font-size      : 110px;
+    }
+    
+    .fixed {
+        font-size      : 20px;
+    	padding-bottom : 10px;
+    	height         : 55px;
+	    line-height    : 55px; 
+    	margin-bottom  : 65px;
+    }
+    
+    
+    .footer-menu-icon{
+        font-size       : 32px;
+        /*Set it according to the footer height */	
+        line-height     : 55px;
+        float           : none;
+/*
+        padding-left    : 20px;
+        padding-right   : 10px;  
+*/
+
+    }   
+
+
+    .footer-rupee-container{
+        font-size       : 31px;
+        /*padding-left    : 45px;
+        padding-right   : 55px;  */
+    
+    }
+    
+     
+    .footer-menu-rupee{
+/*        padding-right   : 5px; */
+        font-size       : 32px;
+    
+    }
+
+
+    /*Add margin at top of main row div*/
+    .main-area{
+        margin-top: 65px;      
+    }
+
+    
+  .header-menu {
+    position        : fixed;
+    right           : 8px;
+    line-height     : 55px;
+   
+}
+    
+    
+    .icon-desc{
+        font-size:16px;
+        margin-top:13px;
+        padding: 0 15px 0 15px;
+    }
+    
+    .footer {
+        height:55px;
+    }
+    

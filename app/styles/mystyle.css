@@ -1,0 +1,637 @@
+/*
+ * Style defined by Robins Gupta 
+ */
+
+
+bulletproof-font-face {
+	font-family:"lato";
+	src: url("../font/lato/Lato-Regular.woff");
+}
+
+bulletproof-font-face {
+	font-family:"lato-bold";
+	src: url("../font/lato/lato-bold.woff");
+
+}
+
+bulletproof-font-face {
+	font-family : "bariol";
+	src	    : url("../font/bariol/BariolRegular.woff");
+
+}
+
+
+body {
+    background:#EEE;
+	font-family: "lato","sans-serif";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+   
+		 
+}
+
+
+
+
+
+/*Style for containers element */
+.tile-area{
+	padding:  10px 0;
+}
+
+
+
+.icon-center{
+	margin:0 auto !important;
+}
+
+.bg-pink {
+	background-color:#ff6b6b;
+}
+
+.bg-peterRiver{
+	background-color:#2f91f1;
+}
+
+
+
+.bg-flatGreen{
+	background-color:#2ecc71;
+}
+
+
+/* Modfiy this for hover option */
+/*
+.bg-flatGreen: hover{
+    
+    
+}
+*/
+
+.bg-darkGreen{
+	background-color:#26a95d;
+}
+
+
+/*DARK RED*/
+.bg-alizarin{
+	background-color:#e74c3c;
+}
+
+.bg-carrot{
+	background-color:#e67e22;
+}
+
+.bg-darkOrange{
+	background-color:#f39c12;
+}
+
+.bg-purple{
+	background-color:#9b59b6;
+
+}
+
+.bg-bright-red {
+	background-color:#ff4444;
+}
+.bg-dark-red {
+	background-color:#cc0000;
+}
+.bg-bright-orange {
+	background-color:#ffbb33;
+}
+.bg-dark-orange {
+	background-color:#ff8800;
+}
+.bg-bright-purple {
+	background-color:#aa66cc;
+}
+.bg-dark-purple {
+	background-color:#9933cc;
+}
+.bg-bright-blue {
+	background-color:#4470ff;
+}
+.bg-dark-blue {
+	background-color:#3c64e5;
+}
+.bg-grey {
+	background-color:#E8E8E8;
+}
+.sidebar-purple {
+	background-color:#8000ff;
+}
+
+
+
+/*ADJUSTING THE CIRCLE*/
+
+/* Circle */
+.circle {
+    border-radius   : 50%;
+    height          : 150px;
+    margin          : 20px 0 20px 0;   
+    width           : 150px;
+    line-height     : 150px; 
+    
+}
+
+
+.icon-text{
+  color:#fff;
+  font-family:"bariol", "lato";
+  font-size:80px;
+  /*letter-spacing:2px;*/
+  text-align:center;
+}
+
+
+/*ALLIGNING THE ICONS IN position*/
+.icon-align{
+	padding-left:0;
+	padding-right:0;
+	padding-top:15px;
+    margin-bottom: 22%;
+}
+
+
+.footer {
+	background:#2f4154;
+    bottom:0;
+    height:47px;
+    left:0;
+    position:fixed;
+	right:0;
+}
+
+
+
+
+.fixed {
+	position: fixed;
+	top : 0;
+	left: 0;
+	z-index:1000;
+	font-size      : 17px;
+    padding-bottom : 10px;
+    text-align     : center;
+	text-transform : uppercase;
+	font-weight	   : 600;
+	letter-spacing : 3px;
+	margin-top	   : 0;
+    height         : 47px;
+    line-height    : 47px;  
+	background	   : #2f4154;
+	color		   : #FFF;
+    padding-right  : 0;  
+	display		   : block !important;
+}
+
+
+
+.footer-menu-icon{
+    color           : #FFF;
+    font-size       : 24px;
+    line-height     : 47px;
+    float           : none;
+}   
+
+
+.footer-rupee-container{
+    font-style      : normal;
+    font-size       : 24px;
+}
+
+
+/*Add margin at top of main row div*/
+.main-area{
+    margin-top: 57px;   
+    
+}
+
+.footer-menu-rupee{
+    padding-right   : 3px;  
+    font-size       : 24px;
+    
+}
+
+
+
+.icon-desc{
+	font-family:"lato";
+	font-size:13px;
+	letter-spacing:2px;
+	color:#3F3C3C;
+	text-align:center;
+	margin-top:10px;
+	font-weight:bold;
+    padding: 0 13px 0 13px;
+}
+
+
+.header-menu {
+    position        : fixed;
+    left            : 6px;
+    line-height     : 47px;
+    font-size       : 20px;
+}
+
+/*Another way of allining a fixed element to center */
+.menu-title-header{
+    display  : table;
+    margin   : auto;  
+}
+
+/*----------------------------------------------------AREA FOR  ADJUSTMENT----------------------------------------------------*/
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+
+/* Samsung galaxy grand                 480 x 800                 */
+/* Moto E                               540 x 960                 */
+
+
+
+@media ( min-device-width : 480px) and (max-device-width: 649px)
+{
+    .circle {
+        height         : 170px; 
+        width          : 170px;
+        line-height    : 170px;
+        text-align     : center; 
+    }
+    
+    .icon-text{
+        font-size      : 90px;
+    }
+    
+    .fixed {
+        font-size      : 20px;
+    	padding-bottom : 10px;
+    	height         : 55px;
+	    line-height    : 55px; 
+/*    	margin-bottom  : 65px;*/
+    }
+    
+    
+     .footer {
+        height:55px;
+    }
+    
+    .footer-menu-icon{
+        font-size       : 31px;
+        /*Set it according to the footer height */	
+        line-height     : 55px;
+        float           : none;
+    }   
+
+
+    .footer-rupee-container{
+        font-size       : 31px;
+     
+    }
+    
+     
+    .footer-menu-rupee{
+/*        padding-right   : 5px; */
+        font-size       : 31px;
+    
+    }
+
+
+    /*Add margin at top of main row div*/
+    .main-area{
+        margin-top: 65px;      
+    }
+
+    
+  .header-menu {
+    position        : fixed;
+    left            : 8px;
+    line-height     : 55px;
+    font-size       : 25px;   
+   
+  }
+    
+    
+    .icon-desc{
+        font-size:16px;
+        margin-top:13px;
+        padding: 0 15px 0 15px;
+    }
+    
+   
+    
+    
+
+}
+
+
+
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+/* Samsung galaxy grand 2               720 x 1280                */
+/* Moto g                               720 x 1280                */
+@media ( min-device-width : 650px) and (max-device-width: 770px)
+{
+    
+    .circle {
+        height         : 225px; 
+        width          : 225px;
+        line-height    : 225px;
+        text-align:    : center;
+    }
+    
+     .icon-text{
+        font-size      : 120px;
+    }
+    
+    .fixed {
+        font-size      : 26px;
+    	padding-bottom : 10px;
+    	height         : 65px;
+	    line-height    : 65px; 
+       
+    }
+    
+    
+    .footer {
+        height         : 65px;
+    }
+    
+    
+    .footer-menu-icon{
+        font-size       : 39px;
+        /*Set it according to the footer height */	
+        line-height     : 65px;
+        float           : none;
+
+    }  
+    
+    .footer-rupee-container{
+        font-size       : 39px;
+     
+    }
+    
+     
+    .footer-menu-rupee{
+        font-size       : 39px;
+    
+    }
+    
+    
+      /*Add margin at top of main row div*/
+    .main-area{
+        margin-top: 75px;      
+    }
+
+    
+    .header-menu {
+        position        : fixed;
+        left            : 15px;
+        line-height     : 65px;
+        font-size       : 37px;   
+
+    }
+
+
+    .icon-desc{
+            font-size   : 30px;
+            margin-top  : 13px;
+            padding     : 0 15px 0 15px;
+    }
+    
+    
+    /*ALLIGNING THE ICONS IN position*/
+    .icon-align{
+	    padding-top:25px;
+        margin-bottom: 25%;
+    }
+    
+
+}
+
+
+/*APPROX 25 PERCENTAGE INCREASE IN  VALUE OF PREVIOUS SUPPORTED VALUES */
+/*Supported devices with actual screen resolutions 960px and above */
+
+/* IPhone 6                             960 x 1704                */
+
+@media ( min-device-width : 771px)
+{
+    
+    .circle {
+        height         : 270px; 
+        width          : 270px;
+        line-height    : 270px;
+        text-align:    : center;
+    }
+    
+    .icon-text{
+        font-size      : 144px;
+    }
+    
+    
+    .fixed {
+        font-size      : 35px;
+    	padding-bottom : 10px;
+    	height         : 78px;
+	    line-height    : 78px; 
+       
+    }
+    
+    
+    .footer {
+        height         : 78px;
+    }
+    
+    
+    .footer-menu-icon{
+        font-size       : 47px;
+        /*Set it according to the footer height */	
+        line-height     : 78px;
+        float           : none;
+
+    }  
+    
+    .footer-rupee-container{
+        font-size       : 47px;
+     
+    }
+    
+     
+    .footer-menu-rupee{
+        font-size       : 46px;
+        padding-right   : 5px; 
+    
+    }
+    
+    
+      /*Add margin at top of main row div*/
+    .main-area{
+        margin-top: 90px;      
+    }
+
+    
+    .header-menu {
+        position        : fixed;
+        left            : 18px;
+        line-height     : 78px;
+        font-size       : 47px;   
+
+    }
+
+
+    .icon-desc{
+            font-size   : 30px;
+            margin-top  : 13px;
+            padding     : 0 15px 0 15px;
+            letter-spacing: 3px;
+    }
+    
+    
+    /*ALLIGNING THE ICONS IN position*/
+    .icon-align{
+	    padding-top:30px;
+        margin-bottom: 30%;
+    }
+
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------AREA ENDS FOR ADJUSTMENT-------------------------------*/
+
+
+
+
+
+
+
+
+.icon-container{
+	padding-left:0;
+	padding-right: 0;
+}
+
+
+
+/*Ravi Css Start Here*/
+
+.small-circle {
+	border-radius:50%;
+	width:40px;
+	height:40px;
+}
+
+
+
+
+
+
+
+.footer-ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+	text-align:center;
+    padding: 0 5px 0 5px; 
+}
+
+
+
+.footer-li {
+    display: inline;
+}
+
+
+.footer-notification {
+	color:white;
+	font-weight:bold;
+}
+
+.footer-icon-align {
+	padding-left:0;
+	padding-right:0;
+}
+.header-arrow {
+	float:left;
+}
+
+
+
+
+/*ENTER MANUALLY*/
+.text {
+	color:#999;
+}
+.prescription-pic-container {
+	background-color:#FFF;
+	margin-bottom:60px;
+	box-shadow:0 0 20px #222;
+}
+.prescription-pic-div {
+	padding:10px 0 10px 0;
+	border-bottom:1px solid #EEE;
+}
+.prescription-pic {
+	width:100%;
+	height:100%;
+}
+.prescription-notes {
+	color:#777;
+}
+
+.add-medicine-icon-align {
+	padding-left:0;
+	padding-right:0;
+	padding-top:15px;
+/*    margin-bottom: 70px; */
+    margin-bottom: 10%;
+}
+
+.span-add-note {
+	padding-right:20px;
+}
+
+.span-days {
+	padding-left:20px;
+	text-align:center;
+}
+
+.required-days {
+	text-align:center;
+}
+
+.ui-corner-all {
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover {
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	top:-.5em;
+}
+.ui-slider-horizontal {
+	height:0.1em;
+}
+.ui-widget-content {
+	border:none;
+	background:#777;
+	opacity:0.8;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+	border:none;
+	background:#000;
+	opacity:0.8;
+}

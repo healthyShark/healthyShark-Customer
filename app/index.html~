@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        <title>drugcorner</title>
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/mystyle.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+          <!--MAIN CONATINER ELEMENT OF BOOTSTRAP--> 
+    	<div class="container-fluid" >
+                <div class="row">
+                    <h1 class="col-xs-12 title ">Buy Medicine </h1><!--DIV ENDS FOR MAIN TILE-->
+
+                    <div class="col-xs-12 icon-container icon-align">
+                        <div class="circle icon-center  bg-peterRiver" >
+                            <p class="icon-text" >s</p>	
+                            
+                        </div>
+                        <p class="icon-desc"  >SEND PRESCRIPTION</p>
+                        
+                    </div><!--div ends for icon-container-->
+
+
+                    <div class="col-xs-12 icon-align" >
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center  circle bg-darkGreen ">
+                                <p class="icon-text">t</p>
+                                
+                            </div>
+                            <p class="icon-desc">TYPE MEDICINE MANUALLY </p> 
+                        </div>
+                        
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center circle bg-darkOrange"> 
+                                <p  class="icon-text">c </p>	
+                                
+                            </div>
+                            <p class="icon-desc">CALL US</p>
+                        </div><!--div ends for icon container-->
+
+                    </div><!--div ends for icon allign-->
+                </div><!---DIV ENDS FOR ROW AREA-->
+
+                <div  class="row">
+                    <h1 class="col-xs-12 title">Manage</h1>
+
+                    <div class="col-xs-12 icon-align">
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center circle bg-alizarin">
+                                <p class="icon-text">s</p>
+                               
+                            </div>
+                             <p class="icon-desc">SAVE PRESCRIPTION</p>
+                        </div><!--DIV ENDS FOR LEFT CIRCLE-->
+
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center circle bg-flatGreen">
+                                <p class="icon-text">r</p>
+                               
+                            </div>
+                             <p class="icon-desc">REPORT MANAGEMENT</p>
+                        </div><!--DIV ENDS FOR RIGHT CIRCLE-->
+                    </div><!--DIV ENDS FOR ALLIGN-->
+                </div><!--DIV AREA ENDS FOR ROW  MANAGEMENT-->
+            
+                 <div  class="row">
+                    <h1 class="col-xs-12 title">Order</h1>
+
+                    <div class="col-xs-12 icon-align">
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center circle bg-purple">
+                                <p class="icon-text">t</p>
+                                
+                            </div>
+                            <p class="icon-desc">TRACK ORDER</p>
+                        </div><!--DIV ENDS FOR LEFT CIRCLE-->
+
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center circle bg-carrot">
+                                <p class="icon-text">o</p>
+                                
+                            </div>
+                            <p class="icon-desc">ORDER</p>
+                        </div><!--DIV ENDS FOR RIGHT CIRCLE-->
+                    </div><!--DIV ENDS FOR ALLIGN-->
+                </div><!--DIV AREA ENDS FOR ROW  MANAGEMENT-->
+            
+            
+                 <div  class="row">
+                    <h1 class="col-xs-12 title">User</h1>
+
+                    <div class="col-xs-12 icon-align">
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center circle bg-peterRiver">
+                                <p class="icon-text">r</p>
+                                
+                            </div>
+                            <p class="icon-desc">ROBINS GUPTA</p>
+                        </div><!--DIV ENDS FOR LEFT CIRCLE-->
+
+                        
+                        <div class="col-xs-6 icon-container">
+                            <div class="icon-center circle-notification bg-alizarin ">
+                                <p class="icon-number">32</p>
+                                
+                            </div>
+                            <p class="icon-desc ">NOTIFICATION</p>    
+                        </div><!--DIV ENDS FOR RIGHT CIRCLE-->
+                    </div><!--DIV ENDS FOR ALLIGN-->
+                </div><!--DIV AREA ENDS FOR ROW  MANAGEMENT-->
+        </div><!--DIV ENDS FOR CONTAINER-FLUID-->
+
+
+	<!-- PHONE GAP SUPPORT-->
+        <script type="text/javascript" src="cordova.js"></script>
+	
+        <!-- build:js scripts/index.js -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js" ></script>
+ 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="type/javascript" src="scripts/models/models.js"></script>
+        <script type="text/javascript" src="scripts/collections/collections.js"></script>
+        <script type="text/javascript" src="scripts/views/app-pages.js"></script>
+        <script type="text/javascript" src="scripts/views/views.js"></script>
+        <script type="text/javascript" src="scripts/routers/routers.js"></script>
+        <script type="text/javascript" src="scripts/app-main/app-main.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
