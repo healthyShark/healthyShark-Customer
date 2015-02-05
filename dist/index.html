@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height,   target-densitydpi=device-dpi ">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
         <title>DrugCorner</title>
         <link rel="stylesheet" href="styles/f44294e9.main.css">
         <!-- Adding the font awesome link        -->
@@ -12,33 +12,13 @@
     <body>
    	    <!--MAIN CONATINER ELEMENT OF BOOTSTRAP--> 
     	<div class="container-fluid">
-             <h1 class="col-xs-12 fixed" id="nav-header">
-                 <span class="menu-title-header">Buy Medicine</span>
-                 <span class="header-menu glyphicon glyphicon-menu-hamburger"></span> 
-             </h1><!--DIV ENDS FOR MAIN TILE-->
+            <!--NavBar header-->
+            <h1 class="col-xs-12 fixed" id="nav-header">
+                <!--Template area-->
+            </h1><!--DIV ENDS FOR MAIN TILE-->
             <div class="row main-area">
                
-                <div class="col-xs-12 icon-container icon-align">
-                    <div class="circle icon-center bg-alizarin">
-                        <p class="icon-text">s</p>	
-                    </div>
-                    <p class="icon-desc">SEND PRESCRIPTION</p>
-                </div><!--div ends for icon-container-->
-
-
-                <div class="col-xs-12 icon-container icon-align">
-                        <div class="icon-center circle bg-darkGreen">
-                            <p class="icon-text">e</p>
-                        </div>
-                        <p class="icon-desc">ENTER MANUALLY </p> 
-                </div>
-
-                <div class="col-xs-12 icon-container icon-align">
-                    <div class="icon-center circle bg-peterRiver"> 
-                        <p class="icon-text">c </p>	
-                    </div>
-                    <p class="icon-desc">CALL US</p>
-                </div><!--div ends for icon container-->
+                <!--Main screen area for Template-->
 
             </div><!---DIV ENDS FOR ROW AREA--> 
             
@@ -59,9 +39,12 @@
         
        
 
-	   <!-- PHONE GAP SUPPORT-->
-      <script type="text/javascript" src="cordova.js"></script>-->
+	    <!-- PHONE GAP SUPPORT-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" data-main="scripts/app" src="bower_components/requirejs/require.js"></script>
 	
-        <script src="scripts/dca038c2.index.js"></script>
+        <script src="scripts/index.js"></script>
+  
+        
 </body>
 </html>

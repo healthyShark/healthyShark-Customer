@@ -139,6 +139,9 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        
+        
+        
         // not used since Uglify task does concat,
         // but still available if needed
         /*concat: {
@@ -150,17 +153,54 @@ module.exports = function (grunt) {
                 ignorePath: '<%= yeoman.app %>/'
             }
         },
+        
+        
+        
+        //Enabling the uglify to uglify all the javascript files and templates....
         // not enabled since usemin task does concat and uglify
         // check index.html to edit your build targets
         // enable this task if you prefer defining your build targets here
-        /*uglify: {
-            dist: {}
-        },*/
+        uglify: {
+            my_target: {
+                files:{
+               
+                    //dependencies..
+                    '<%= yeoman.dist %>/bower_components/underscore/underscore-min.js' : '<%= yeoman.app %>/bower_components/underscore/underscore-min.js',
+                    '<%= yeoman.dist %>/bower_components/backbone/backbone.js' : '<%= yeoman.app %>/bower_components/backbone/backbone.js',
+                    '<%= yeoman.dist %>/bower_components/jquery/dist/jquery.js' : '<%= yeoman.app %>/bower_components/jquery/dist/jquery.js',
+                    '<%= yeoman.dist %>/bower_components/bootstrap/dist/js/bootstrap.min.js' : '<%= yeoman.app %>/bower_components/bootstrap/dist/js/bootstrap.min.js',
+                    '<%= yeoman.dist %>/bower_components/backbone-model-file-upload/backbone-model-file-upload.js' : '<%= yeoman.app %>/bower_components/backbone-model-file-upload/backbone-model-file-upload.js',
+                    '<%= yeoman.dist %>/bower_components/Backbone.dualStorage/backbone.dualstorage.js' : '<%= yeoman.app %>/bower_components/Backbone.dualStorage/backbone.dualstorage.js',
+                    '<%= yeoman.dist %>/bower_components/text/text.js' : '<%= yeoman.app %>/bower_components/text/text.js',
+                    '<%= yeoman.dist %>/bower_components/requirejs/require.js' : '<%= yeoman.app %>/bower_components/requirejs/require.js',
+                    
+                    
+                    
+                    //Scripts files..
+                    '<%= yeoman.dist %>/scripts/my-script.js' : '<%= yeoman.app %>/scripts/my-script.js',
+                    '<%= yeoman.dist %>/scripts/index.js' : '<%= yeoman.app %>/scripts/index.js',
+                    '<%= yeoman.dist %>/scripts/app.js' : '<%= yeoman.app %>/scripts/app.js',
+                    '<%= yeoman.dist %>/scripts/app-main/app-main.js' : '<%= yeoman.app %>/scripts/app-main/app-main.js',
+                    '<%= yeoman.dist %>/scripts/collections/collections.js' : '<%= yeoman.app %>/scripts/collections/collections.js',
+                    '<%= yeoman.dist %>/scripts/models/models.js' : '<%= yeoman.app %>/scripts/models/models.js',
+                    '<%= yeoman.dist %>/scripts/routers/routers.js' : '<%= yeoman.app %>/scripts/routers/routers.js',
+                    '<%= yeoman.dist %>/scripts/views/app-pages.js' : '<%= yeoman.app %>/scripts/views/app-pages.js',
+                    '<%= yeoman.dist %>/scripts/views/main-views.js' : '<%= yeoman.app %>/scripts/views/main-views.js',
+                    '<%= yeoman.dist %>/scripts/views/top-nav-bar-view.js' : '<%= yeoman.app %>/scripts/views/top-nav-bar-view.js',
+                    
+                }
+            }
+        },
+ 
+
+        
+        
+//Commented this piece of code to avoid renaming of files..
         rev: {
             dist: {
                 files: {
                     src: [
-                        '<%= yeoman.dist %>/scripts/{,*/}*.js',
+                        //'<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
@@ -168,6 +208,8 @@ module.exports = function (grunt) {
                 }
             }
         },
+        
+        
         useminPrepare: {
             options: {
                 dest: '<%= yeoman.dist %>'
@@ -253,7 +295,9 @@ module.exports = function (grunt) {
 						'res/**',
                         'styles/fonts/{,*/}*.*',
 			'fonts/**/*.*',
-			'image/**/*.*'
+			'image/**/*.*',
+                        //Copying the template folder..
+                        'templates/**/*.html'
                     ]
                 }]
             },
