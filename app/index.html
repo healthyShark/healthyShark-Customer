@@ -16,33 +16,13 @@
     <body>
    	    <!--MAIN CONATINER ELEMENT OF BOOTSTRAP--> 
     	<div class="container-fluid" >
-             <h1 class="col-xs-12 fixed" id="nav-header">
-                 <span class="menu-title-header">Buy Medicine</span>
-                 <span class="header-menu glyphicon glyphicon-menu-hamburger"></span> 
-             </h1><!--DIV ENDS FOR MAIN TILE-->
+            <!--NavBar header-->
+            <h1 class="col-xs-12 fixed" id="nav-header">
+                <!--Template area-->
+            </h1><!--DIV ENDS FOR MAIN TILE-->
             <div class="row main-area" >
                
-                <div class="col-xs-12 icon-container icon-align">
-                    <div class="circle icon-center  bg-alizarin" >
-                        <p class="icon-text" >s</p>	
-                    </div>
-                    <p class="icon-desc">SEND PRESCRIPTION</p>
-                </div><!--div ends for icon-container-->
-
-
-                <div class="col-xs-12  icon-container icon-align" >
-                        <div class="icon-center  circle bg-darkGreen ">
-                            <p class="icon-text">e</p>
-                        </div>
-                        <p class="icon-desc">ENTER MANUALLY </p> 
-                </div>
-
-                <div class="col-xs-12 icon-container icon-align">
-                    <div class="icon-center circle bg-peterRiver"> 
-                        <p  class="icon-text">c </p>	
-                    </div>
-                    <p class="icon-desc">CALL US</p>
-                </div><!--div ends for icon container-->
+                <!--Main screen area for Template-->
 
             </div><!---DIV ENDS FOR ROW AREA--> 
             
@@ -64,19 +44,12 @@
        
 
 	   <!-- PHONE GAP SUPPORT-->
-      <script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" src="cordova.js"></script>
 	
         <!-- build:js scripts/index.js -->
-        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js" ></script>
- 	    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="type/javascript" src="scripts/models/models.js"></script>
-        <script type="text/javascript" src="scripts/collections/collections.js"></script>
-        <script type="text/javascript" src="scripts/views/app-pages.js"></script>
-        <script type="text/javascript" src="scripts/views/views.js"></script>
-        <script type="text/javascript" src="scripts/routers/routers.js"></script>
-        <script type="text/javascript" src="scripts/app-main/app-main.js"></script>
-        <script type="text/javascript" src="scripts/index.js"></script>
-        <script type="text/javascript" src="scripts/my-script.js"></script>
+        <script type="text/javascript" data-main="scripts/app.js" src="bower_components/requirejs/require.js"></script>
         <!-- endbuild -->
+  
+        
 </body>
 </html>
