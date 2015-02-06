@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Side Menu*/
+#nav-header {
+	padding-left:0;
+}
+
+
+.dropdown-menu {
+	padding-top:10px;
+	top:165%;
+	border:none;
+	border-radius:0px;
+	box-shadow:none;
+	min-width:310px;
+	opacity:1;
+	background:#18212a;
+    margin-top: 47px;
+}
+
+
+
+.dropdown-menu>li>a {
+	line-height:5;
+	color:#aaa9a9;
+	font-size:16px;
+    
+}
+
+.dropdown-menu>li>a:hover,  .dropdown-menu>li>a:focus
+{
+	color:#EEE;
+    background: rgba(48, 66, 90, 0.93)
+}
+
+
+
+
+.menu-container {
+	margin-top:0px;
+	padding-right:0 !important;
+	padding-left:3px;
+	padding-top:0px;
+	margin-bottom:10px;
+}
+
+
+.menu-content {
+	background-color:#333;
+	padding-right:0px;
+	margin-right:0px;
+	width:100%;
+	opacity:1;
+}
+.menu-orange {
+	background-color:#FF5500;
+}
+
+
+
+/*----------------------------------------------------AREA FOR  ADJUSTMENT----------------------------------------------------*/
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+
+/* Samsung galaxy grand                 480 x 800                 */
+
+
+@media ( min-device-width : 480px) and (max-device-width: 570px)
+{
+     
+    .dropdown-menu {
+	    min-width:400px;
+        margin-top: 55px;
+	
+	}
+	.dropdown-menu>li>a {
+	  font-size:20px;
+	}
+
+}
+
+
+
+/*Increase all by 25%*/
+@media ( min-device-width : 571px) and (max-device-width: 649px)
+{
+    .circle {
+        height         : 210px; 
+        width          : 210px;
+        line-height    : 210px;
+        text-align     : center; 
+    }
+    
+    
+     .fixed {
+        font-size      : 29px;
+    	padding-bottom : 10px;
+	    line-height    : 65px; 
+    	margin-bottom  : 65px;
+    }
+    
+      .footer, .fixed{
+        height  :  65px;
+    }
+    
+    .header-menu {
+        left            : 15px;
+        line-height     : 65px;
+        font-size       : 34px;   
+    }
+    
+    
+       .footer-menu-icon{
+        font-size       : 36px;
+        /*Set it according to the footer height */	
+        line-height     : 65px;
+        float           : none;
+    }   
+
+
+    .footer-rupee-container{
+        font-size       : 36px;
+     
+    }
+    
+     
+    .footer-menu-rupee{
+/*        padding-right   : 5px; */
+        font-size       : 36px;
+    
+    }
+    
+    
+     /*Add margin at top of main row div*/
+    .main-area{
+        margin-top: 75px;      
+    }
+    
+    .icon-text{
+        font-size      : 105px;
+    }
+  
+    .icon-desc{
+        font-size       : 25px;
+        margin-top      : 17px;
+        padding         : 0 15px 0 15px;
+    }
+	
+    .dropdown-menu {
+        min-width:500px;
+        margin-top: 65px;
+	
+	}
+	.dropdown-menu>li>a {
+	   font-size:26px;
+	}
+   
+    
+    
+
+}
+
+
+/*25% increment on previous*/
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+/* Samsung galaxy grand 2               720 x 1280                */
+/* Moto g                               720 x 1280                */
+@media ( min-device-width : 650px) and (max-device-width: 770px)
+{
+    
+    .circle {
+        height         : 250px; 
+        width          : 250px;
+        line-height    : 250px;
+        text-align:    : center;
+    }
+    
+     .icon-text{
+        font-size      : 122px;
+    }
+ 
+    .icon-desc{
+            font-size   : 28px;
+            margin-top  : 13px;
+            padding     : 15px 15px 0 15px;
+    }
+	
+	 .dropdown-menu {
+	     min-width:625px;
+         margin-top: 77px;
+	
+	}
+	.dropdown-menu>li>a {
+	font-size:36px;
+	}
+    
+
+}
+
+/*15% Increment*/
+/*APPROX 25 PERCENTAGE INCREASE IN  VALUE OF PREVIOUS SUPPORTED VALUES */
+/*Supported devices with actual screen resolutions 960px and above */
+
+/* IPhone 6                             960 x 1704                */
+
+@media ( min-device-width : 771px)
+{
+    
+    .circle {
+        height         : 290px; 
+        width          : 290px;
+        line-height    : 290px;
+        text-align:    : center;
+    }
+    
+    .icon-text{
+        font-size      : 158px;
+    }
+    
+
+    .icon-desc{
+        font-size   : 46px;
+        margin-top  : 15px;
+        padding     : 0 15px 0 15px;
+        letter-spacing: 3px;
+    }
+    
+	.dropdown-menu {
+        min-width:725px;
+        margin-top: 78px; 
+	
+	}
+	.dropdown-menu>li>a {
+	   font-size:41px;
+	}
+
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------AREA ENDS FOR ADJUSTMENT-------------------------------*/
+
+
+
+
+
+
+/*HOME PAGE ADJUSTMENT*/
+
+

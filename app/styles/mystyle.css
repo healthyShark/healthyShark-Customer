@@ -45,33 +45,57 @@ body {
 	margin:0 auto !important;
 }
 
+/*Pink*/
 .bg-pink {
 	background-color:#ff6b6b;
 }
+.bg-pink-darker {
+	background-color:#f05c5c;
+}
+.bg-pink-darkest {
+	background-color:#e14d4d;
+}
+/*Pink*/
 
+
+/*Bluish*/
 .bg-peterRiver{
 	background-color:#2f91f1;
 }
+.bg-peterRiver-darker{
+	background-color:#2082e2;
+}
+.bg-peterRiver-darkest{
+	background-color:#1173d3;
+}
+
+/*Bluish*/
 
 
-
+/*Green*/
 .bg-flatGreen{
 	background-color:#2ecc71;
 }
+.bg-flatGreen-darker{
+	background-color:#1fbd62;
+}
+.bg-flatGreen-darkest{
+	background-color:#10ae49;
+}
 
-
-/* Modfiy this for hover option */
-/*
 .bg-flatGreen: hover{
     
     
 }
-*/
 
+/*Green*/
+
+
+
+/*------------------------More Colors--------------------------*/
 .bg-darkGreen{
 	background-color:#26a95d;
 }
-
 
 /*DARK RED*/
 .bg-alizarin{
@@ -119,8 +143,22 @@ body {
 	background-color:#E8E8E8;
 }
 .sidebar-purple {
-	background-color:#8000ff;
+	border-left:12px solid #8000ff;
 }
+.sidebar-orange {
+	border-left:12px solid #FF5500;
+	
+}
+.sidebar-green {
+	border-left:12px solid #00b33b;
+}
+.bg-dullred {
+	background-color:#db4437;
+}
+
+
+
+/*------------------------More Colors--------------------------*/
 
 
 
@@ -242,6 +280,11 @@ body {
     margin   : auto;  
 }
 
+
+.footer-li {
+    display: inline;
+}
+
 /*----------------------------------------------------AREA FOR  ADJUSTMENT----------------------------------------------------*/
 
 /*Supported devices with actual screen resolutions not the base resolution*/
@@ -251,7 +294,7 @@ body {
 
 
 
-@media ( min-device-width : 480px) and (max-device-width: 649px)
+@media ( min-device-width : 480px) and (max-device-width: 570px)
 {
     .circle {
         height         : 170px; 
@@ -267,13 +310,12 @@ body {
     .fixed {
         font-size      : 20px;
     	padding-bottom : 10px;
-    	height         : 55px;
 	    line-height    : 55px; 
 /*    	margin-bottom  : 65px;*/
     }
     
     
-     .footer {
+     .footer, .fixed{
         height:55px;
     }
     
@@ -346,23 +388,23 @@ body {
     }
     
     .fixed {
-        font-size      : 26px;
+        font-size      : 28px;
     	padding-bottom : 10px;
-    	height         : 65px;
-	    line-height    : 65px; 
+/*	    line-height    : 65px; */
        
     }
     
-    
-    .footer {
-        height         : 65px;
+    .fixed, .footer {
+         height         : 77px;
+        line-height     : 77px; 
+        
     }
-    
+  
     
     .footer-menu-icon{
-        font-size       : 39px;
+        font-size       : 41px;
         /*Set it according to the footer height */	
-        line-height     : 65px;
+        line-height     : 77px;
         float           : none;
 
     }  
@@ -388,7 +430,7 @@ body {
     .header-menu {
         position        : fixed;
         left            : 15px;
-        line-height     : 65px;
+        line-height     : 77px;
         font-size       : 37px;   
 
     }
@@ -432,7 +474,7 @@ body {
     
     
     .fixed {
-        font-size      : 35px;
+        font-size      : 37px;
     	padding-bottom : 10px;
     	height         : 78px;
 	    line-height    : 78px; 

@@ -61,7 +61,7 @@ require.config({
     
 });
 
- define([
+ define(['bootstrap',
        'routers'
     ], function (app) {
      console.log("Loading the data...");
