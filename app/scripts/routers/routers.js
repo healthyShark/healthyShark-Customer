@@ -14,16 +14,19 @@
         'models',
         'collections',
         'app-pages',
-        'main-views'
+        'main-views',
+        'send-prescription-view'
         
-    ],  function ($, _, Backbone, upload, dualStorage, models, collections, appPages, app ) {
+    ],  function ($, _, Backbone, upload, dualStorage, models, collections, appPages, app , sendPrescriptionView ) {
         
             app.Routers =  app.Routers || {};
 
             //Defining routers here...
             app.Routers = Backbone.Router.extend({
 	            routes:{
-                    "*path":	"ShowMainView",
+                    "customer/sendPrescription"     :   "showSendPrescriptionView",
+                    "*path"                         :   "showMainView",
+                    
                 },
                 
                 
@@ -35,8 +38,22 @@
                 },
                 
                 
+                //Routers showing the view of sendPrescription...
+                showSendPrescriptionView : function(){
+                    //Closing the previous opened views...
+                    this.closePreviousViews();
+                    var sendPrescription = new sendPrescriptionView.View.customerSendPrescription();
+                    //Loading the view..
+                    var mainElement = $('div.row.main-area');
+                    //Clearing the main screen...
+                    mainElement.empty();
+                    
+                    mainElement.append(sendPrescription.render().el);
+                },
+                
+                
                 //Showing the MainView..
-                ShowMainView : function(){
+                showMainView : function(){
                     //Closing the previous opened views...
                     this.closePreviousViews();
                     console.log("Default page is getting load...");

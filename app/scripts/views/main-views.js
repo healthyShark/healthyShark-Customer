@@ -79,7 +79,7 @@
                 
                 //Event on clicking sendPrescription button...
                 onSendPrescription : function(e){
-                    alert("Prescription is being sent..");   
+                    app.Global.Router.navigate("customer/sendPrescription", {trigger: true});
                 },
                 
                 

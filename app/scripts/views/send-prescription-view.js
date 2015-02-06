@@ -38,9 +38,8 @@
                 
                 events: {
 	                //Event for button working..
-                    "touchstart #sendPrescription"     : "onSendPrescription",
-                    "touchstart #manualEntry"          : "onManualEntry",
-                    "touchstart #callUs"               : "onCallUs"
+                    "touchstart #fromGallery"     : "onGallerySelected",
+                    "touchstart #fromCamera"      : "onCameraSelected"
                 },
             
             
@@ -48,12 +47,12 @@
                 //Rendering the view..
                 render : function(){
                     //Rendering the element..
-                    this.$el.append(this.sendPrescription).append(this.manualEntry).append(this.callUs);
+                    this.$el.append(this.fromCamera).append(this.fromGallery);
                 
                     //Now loading the child view navBar..
                     var navBar    = new app.View.customerTopNavBar();
                     var navHeader = $('#nav-header'); 
-                    navHeader.append(navBar.render().el);
+                    navHeader.append(navBar.setBackNavBar().el);
                     this.childViews.push(navBar);
                 
                     return this;
@@ -75,21 +74,17 @@
                 },
                 
                 
-                //Event on clicking sendPrescription button...
-                onSendPrescription : function(e){
-                    alert("Prescription is being sent..");   
+                //Event on clicking onGallerySelected button...
+                onGallerySelected : function(e){
+                    alert("Select image from gallery..");   
                 },
                 
-                
-                onManualEntry : function(e){
-                    alert("Manual entry!");   
+                /*Event on clicking camera*/
+                onCameraSelected : function(e){
+                    alert("Opening camera..");   
                     
-                },
-                
-                
-                onCallUs : function(){
-                    alert("Call Us");   
                 }
+                
                 
         });
         return app;

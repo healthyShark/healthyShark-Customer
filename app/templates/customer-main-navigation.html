@@ -1,14 +1,20 @@
 <div class="dropdown">
-    <span class="<%= iconClass %> dropdown-toggle header-menu" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"></span>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Payment</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Orders</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estimation</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Feedback</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help</a></li>
-    </ul>
+     <% if(mainPage){ %>
+        <span class="<%= iconClass %> dropdown-toggle header-menu" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"></span>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Payment</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Orders</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estimation</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Feedback</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help</a></li>
+        </ul>
+    <% } else { %>
+        <span class="<%= iconClass %> header-menu" id="backButton"  ></span>
+    <% } %>
+        
+    
 </div>
 <span class="menu-title-header"> <%= title %> </%></span>
 

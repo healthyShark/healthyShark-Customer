@@ -26,8 +26,22 @@
             initialize : function(){
                 
                 //Loading the navBar with menu icon...
-                this.navBar = this.loadNavBar(customerNavBarTemplate, 'BUY MEDICINE', 'glyphicon glyphicon-menu-hamburger'); 
+                this.navBar = this.loadNavBar(customerNavBarTemplate, 'BUY MEDICINE', 'glyphicon glyphicon-menu-hamburger', true); 
             },
+            
+            
+             events: {
+	                //Event for back button click..
+                    "touchstart #backButton"     : "onBackButton",
+            },
+            
+            
+            /*On clicking of the back button*/
+            onBackButton: function(){
+                //go to the previous window url state..
+                window.history.back();
+            },
+            
             
             
             //Rendering the view..
@@ -46,12 +60,24 @@
             
             
             
+            //Function for setting the setBackNavBar...
+            setBackNavBar : function(){
+                var backNavbar = this.loadNavBar(customerNavBarTemplate, 'SEND PRESCRIPTION', 'glyphicon glyphicon-chevron-left', false);
+                this.$el.empty();
+                this.$el.append(backNavbar);
+                return this;
+            },
             
-            loadNavBar : function(itemTemplate, title, iconClass){
+            
+    
+            
+            
+            loadNavBar : function(itemTemplate, title, iconClass, mainPage){
                 var Template = _.template(itemTemplate);
                 var data     = Template({
-                   'title'      :title,
-                    'iconClass' :iconClass 
+                   'title'      : title,
+                    'iconClass' : iconClass,
+                    'mainPage'  : mainPage
                 });
                 return data;
             }//end of loadNavBar method..
