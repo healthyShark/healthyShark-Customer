@@ -30,8 +30,8 @@
                     //Adding the child views...
                     this.childViews = [];
                 
-                    this.fromCamera = this.loadTemplate(customerMainTemplate, 'bg-peterRiver', 'c', 'FROM CAMERA', 'fromCamera');
-                    this.fromGallery      = this.loadTemplate(customerMainTemplate, 'bg-darkGreen', 'e', 'FROM GALLERY', 'fromGallery');
+                    this.fromCamera = this.loadTemplate(customerMainTemplate, 'bg-peterRiver', 'c', 'CAMERA', 'fromCamera');
+                    this.fromGallery      = this.loadTemplate(customerMainTemplate, 'bg-darkGreen', 'a', 'FROM GALLERY', 'fromGallery');
                 
                 },
             

@@ -3,18 +3,18 @@
  */
 
 
-bulletproof-font-face {
+@font-face {
 	font-family:"lato";
 	src: url("../font/lato/Lato-Regular.woff");
 }
 
-bulletproof-font-face {
+@font-face {
 	font-family:"lato-bold";
 	src: url("../font/lato/lato-bold.woff");
 
 }
 
-bulletproof-font-face {
+@font-face {
 	font-family : "bariol";
 	src	    : url("../font/bariol/BariolRegular.woff");
 

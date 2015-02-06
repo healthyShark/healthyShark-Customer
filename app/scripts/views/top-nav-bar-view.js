@@ -37,7 +37,8 @@
             
             
             /*On clicking of the back button*/
-            onBackButton: function(){
+            onBackButton: function(e){
+                e.preventDefault();
                 //go to the previous window url state..
                 window.history.back();
             },
