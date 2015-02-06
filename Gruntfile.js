@@ -173,6 +173,8 @@ module.exports = function (grunt) {
                     '<%= yeoman.dist %>/bower_components/Backbone.dualStorage/backbone.dualstorage.js' : '<%= yeoman.app %>/bower_components/Backbone.dualStorage/backbone.dualstorage.js',
                     '<%= yeoman.dist %>/bower_components/text/text.js' : '<%= yeoman.app %>/bower_components/text/text.js',
                     '<%= yeoman.dist %>/bower_components/requirejs/require.js' : '<%= yeoman.app %>/bower_components/requirejs/require.js',
+                    '<%= yeoman.dist %>/bower_components/fastclick/lib/fastclick.js' : '<%= yeoman.app %>/bower_components/fastclick/lib/fastclick.js',
+                    
                     
                     
                     
@@ -187,6 +189,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.dist %>/scripts/views/app-pages.js' : '<%= yeoman.app %>/scripts/views/app-pages.js',
                     '<%= yeoman.dist %>/scripts/views/main-views.js' : '<%= yeoman.app %>/scripts/views/main-views.js',
                     '<%= yeoman.dist %>/scripts/views/top-nav-bar-view.js' : '<%= yeoman.app %>/scripts/views/top-nav-bar-view.js',
+                    '<%= yeoman.dist %>/scripts/views/send-prescription-view.js' : '<%= yeoman.app %>/scripts/views/send-prescription-view.js',
                     
                 }
             }

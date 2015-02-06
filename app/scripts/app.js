@@ -15,6 +15,7 @@ require.config({
         'backbone-model-file-upload': '../bower_components/backbone-model-file-upload/backbone-model-file-upload',
         'dualStorage'               : '../bower_components/Backbone.dualStorage/backbone.dualstorage',
         'text'                      : '../bower_components/text/text',
+        'fastclick'                 : '../bower_components/fastclick/lib/fastclick.js'
         
         /* My Javascript files */
         'models'                    : 'models/models',
@@ -61,12 +62,21 @@ require.config({
     
 });
 
- define(['bootstrap',
+
+//Waiting for the device to be ready...
+document.addEventListener("deviceReady", deviceReady, false);
+
+function deviceReady() {
+    define(['bootstrap',
+            'fastclick',
        'routers'
     ], function (app) {
-     console.log("Loading the data...");
-     window.x = app;
-     
- });
+        FastClick.attach(document.body);
+        console.log("Loading the data...");
+        window.x = app;
+    });//End of define function...
+}
+
+ 
         
         
