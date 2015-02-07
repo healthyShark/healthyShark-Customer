@@ -42,7 +42,7 @@
                 showSendPrescriptionView : function(){
                     //Closing the previous opened views...
                     this.closePreviousViews();
-                    var sendPrescription = new sendPrescriptionView.View.customerSendPrescription();
+                    var sendPrescription = new app.View.customerSendPrescription();
                     //Loading the view..
                     var mainElement = $('div.row.main-area');
                     //Clearing the main screen...

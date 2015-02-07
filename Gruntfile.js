@@ -7,12 +7,20 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
+/**
+ * Module dependencies
+ */
+//var cordova = require('cordova');
+
+
 module.exports = function (grunt) {
 	// show elapsed time at the end
 	require('time-grunt')(grunt);
 	// load all grunt tasks
 	require('load-grunt-tasks')(grunt);
 
+	grunt.loadNpmTasks('grunt-cordova-cli');
+	
 	grunt.initConfig({
 		// configurable paths
 		yeoman: {
@@ -26,7 +34,7 @@ module.exports = function (grunt) {
 				config: 'config.xml',
 				cordova: '.cordova',
 				path: 'phonegap',
-				plugins: [],
+				plugins: ['org.apache.cordova.camera'],
 				platforms: ['android'],
 				verbose: false
 			}
@@ -180,7 +188,6 @@ module.exports = function (grunt) {
                     
                     //Scripts files..
                     '<%= yeoman.dist %>/scripts/my-script.js' : '<%= yeoman.app %>/scripts/my-script.js',
-                    '<%= yeoman.dist %>/scripts/index.js' : '<%= yeoman.app %>/scripts/index.js',
                     '<%= yeoman.dist %>/scripts/app.js' : '<%= yeoman.app %>/scripts/app.js',
                     '<%= yeoman.dist %>/scripts/app-main/app-main.js' : '<%= yeoman.app %>/scripts/app-main/app-main.js',
                     '<%= yeoman.dist %>/scripts/collections/collections.js' : '<%= yeoman.app %>/scripts/collections/collections.js',
@@ -328,6 +335,54 @@ module.exports = function (grunt) {
         }
     });
 
+/*
+    grunt.registerMultiTask('cordova_cli', 'Run cordova commands.', function () {
+        // Merge task-specific and/or target-specific options with these defaults.
+        var options = this.options({
+            cmd: 'emulate', // available commands "emulate", "build", "prepare", "compile", "run", "create", "serve", "platform", "plugin"
+            subcommand: '', // available "add", "rm"
+            platforms: ["android"], // available platforms "android", "ios" ...
+            options: [],
+            plugins: ['org.apache.cordova.camera']
+        });
+
+        var self = this;
+        var done = function done(){
+            var callback = self.async();
+            return function over(){
+                grunt.log.writeln('The Cordova command "' + cmd + '" run successfully.');
+                callback();
+            };
+        };
+
+        var cmd = options.cmd;
+        if (cordova.hasOwnProperty(cmd)) {
+            if (cmd === 'emulate' || cmd === 'build' || cmd === 'prepare' || cmd === 'compile' || cmd === 'run') {
+                var opts = {
+                    platforms: options.platforms,
+                    options: options.options
+                };
+                cordova.raw[cmd].call(null, opts).done(done());
+            }else if (cmd === 'create' || cmd === 'serve'){
+                throw new Error('The Cordova command "' + cmd + '" is not supported by the plugin. Pull request welcome.');
+            }else{
+                // platform/plugins add/rm [target(s)]
+                var invocation = [options.subcommand]; // this has the sub-command, i.e. "platform add" or "plugin rm"
+                var targets = options.platforms.length > 0 ? options.platforms : options.plugins; // this should be an array of targets, be it platforms or plugins
+                invocation.push(targets);
+                cordova.raw[cmd].apply(null, invocation).done(done());
+            }
+        }else{
+            throw new Error('Cordova does not know command "' + cmd + '".');
+        }
+
+    });
+*/	
+
+ 
+
+
+
     grunt.registerTask('server', function (target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -365,7 +420,8 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('platform-build', [
 		'default',
-		'phonegap:build'
+		'phonegap:build',
+        'phonegap:run'
 	]);
 
     grunt.registerTask('default', [

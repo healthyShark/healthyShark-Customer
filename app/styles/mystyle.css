@@ -5,18 +5,18 @@
 
 @font-face {
 	font-family:"lato";
-	src: url("../font/lato/Lato-Regular.woff");
+	src: url("../fonts/lato/lato-regular.woff");
 }
 
 @font-face {
 	font-family:"lato-bold";
-	src: url("../font/lato/lato-bold.woff");
+	src: url("../fonts/lato/lato-bold.woff");
 
 }
 
 @font-face {
 	font-family : "bariol";
-	src	    : url("../font/bariol/BariolRegular.woff");
+	src	    : url("../fonts/bariol/BariolRegular.woff");
 
 }
 
@@ -257,7 +257,7 @@ body {
 
 .icon-desc{
 	font-family:"lato";
-	font-size:13px;
+	font-size:15px;
 	letter-spacing:2px;
 	color:#3F3C3C;
 	text-align:center;
@@ -356,7 +356,7 @@ body {
     
     
     .icon-desc{
-        font-size:16px;
+        font-size:18px;
         margin-top:13px;
         padding: 0 15px 0 15px;
     }
@@ -437,7 +437,7 @@ body {
 
 
     .icon-desc{
-            font-size   : 30px;
+            font-size   : 32px;
             margin-top  : 13px;
             padding     : 0 15px 0 15px;
     }
@@ -524,7 +524,7 @@ body {
 
 
     .icon-desc{
-            font-size   : 30px;
+            font-size   : 32px;
             margin-top  : 13px;
             padding     : 0 15px 0 15px;
             letter-spacing: 3px;

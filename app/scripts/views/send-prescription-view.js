@@ -18,6 +18,10 @@
         'top-nav-bar-view'
     ], function ($, _, Backbone, upload , dualStorage , models, collections, app, customerMainTemplate) {
         
+            var pictureSource; //Picture Source
+            var destinationType; //Set the format of the returned value..
+        
+        
             //Define the views here..
             app.View = app.View || {};
         
@@ -25,14 +29,27 @@
             
                 initialize : function()
                 {
+                    
+                    
+                    
                     //Adding the current view element...
 		            app.Global.Router.currentView = this;
                     //Adding the child views...
                     this.childViews = [];
                 
                     this.fromCamera = this.loadTemplate(customerMainTemplate, 'bg-peterRiver', 'c', 'CAMERA', 'fromCamera');
-                    this.fromGallery      = this.loadTemplate(customerMainTemplate, 'bg-darkGreen', 'a', 'FROM GALLERY', 'fromGallery');
+                    this.fromGallery      = this.loadTemplate(customerMainTemplate, 'bg-darkGreen', 's', 'SAVED PHOTOS', 'fromGallery');
+                    this.onDeviceReady();
+                                
+                },
                 
+                
+                //Event on getting device ready..
+                onDeviceReady : function() {
+                    console.log(window.navigator);
+                    pictureSource  = window.navigator.camera.PictureSourceType;
+                    
+                    destinationType= window.navigator.camera.DestinationType;
                 },
             
                 
@@ -41,6 +58,9 @@
                     "touchstart #fromGallery"     : "onGallerySelected",
                     "touchstart #fromCamera"      : "onCameraSelected"
                 },
+                
+                
+                
             
             
                 
@@ -54,7 +74,7 @@
                     var navHeader = $('#nav-header'); 
                     navHeader.append(navBar.setBackNavBar().el);
                     this.childViews.push(navBar);
-                
+                    //document.addEventListener("deviceready", this.onDeviceReady, false);
                     return this;
                 },
             
@@ -76,16 +96,37 @@
                 
                 //Event on clicking onGallerySelected button...
                 onGallerySelected : function(e){
-                    alert("Select image from gallery..");   
+                    //Opening the camera...
+                    navigator.camera.getPicture(this.onPhotoURISuccess, this.onFail, {
+                        quality         : 50,
+                        destinationType : destinationType.FILE_URI,
+                        source          : pictureSource.PHOTOLIBRARY,
+                        allowEdit       : true
+                    });
                 },
                 
-                /*Event on clicking camera*/
+                 /*Event on clicking camera*/
                 onCameraSelected : function(e){
-                    alert("Opening camera..");   
+                    //Opening the camera...
+                    navigator.camera.getPicture(this.onPhotoURISuccess, this.onFail, {
+                        quality: 50,
+                        destinationType : destinationType.FILE_URI
+                    });
                     
+                },
+                
+                
+                //Getting the uri of the image..
+                onPhotoURISuccess : function(imageURI){
+                    alert(imageURI);
+                },
+                
+                
+                onFail : function(message){
+                    alert('Failed because: ' + message);
                 }
                 
-                
+
         });
         return app;
     });//End of define function...

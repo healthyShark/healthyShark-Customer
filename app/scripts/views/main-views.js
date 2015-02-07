@@ -79,18 +79,19 @@
                 
                 //Event on clicking sendPrescription button...
                 onSendPrescription : function(e){
+                    console.log("Opening the prescription..");
                     app.Global.Router.navigate("customer/sendPrescription", {trigger: true});
                 },
                 
                 
                 onManualEntry : function(e){
-                    alert("Manual entry!");   
+                    console.log("Manual entry!");   
                     
                 },
                 
                 
                 onCallUs : function(){
-                    alert("Call Us");   
+                    console.log("Call Us");   
                 }
                 
         });
