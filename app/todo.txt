@@ -1,0 +1,4 @@
+- Prepare model for prescription..
+- Create view for prescription
+- Check for appropriate method for uploading file to server using file uri
+

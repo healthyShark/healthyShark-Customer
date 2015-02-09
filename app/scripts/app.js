@@ -27,7 +27,8 @@ require.config({
         'dhoundhu-script'           : 'my-script',
         'index'                     : 'index',
         'top-nav-bar-view'          : 'views/top-nav-bar-view',
-        'send-prescription-view'    : 'views/send-prescription-view'
+        'send-prescription-view'    : 'views/send-prescription-view',
+        'file-system'               : 'phonegap/file-system'
   
     },
 

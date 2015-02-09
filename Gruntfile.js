@@ -34,7 +34,7 @@ module.exports = function (grunt) {
 				config: 'config.xml',
 				cordova: '.cordova',
 				path: 'phonegap',
-				plugins: ['org.apache.cordova.camera'],
+				plugins: ['org.apache.cordova.camera', 'org.apache.cordova.file' ],
 				platforms: ['android'],
 				verbose: false
 			}
@@ -197,6 +197,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.dist %>/scripts/views/main-views.js' : '<%= yeoman.app %>/scripts/views/main-views.js',
                     '<%= yeoman.dist %>/scripts/views/top-nav-bar-view.js' : '<%= yeoman.app %>/scripts/views/top-nav-bar-view.js',
                     '<%= yeoman.dist %>/scripts/views/send-prescription-view.js' : '<%= yeoman.app %>/scripts/views/send-prescription-view.js',
+                    '<%= yeoman.dist %>/scripts/phonegap/file-system.js' : '<%= yeoman.app %>/scripts/phonegap/file-system.js'
                     
                 }
             }
