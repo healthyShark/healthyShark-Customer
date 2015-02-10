@@ -28,7 +28,7 @@ require.config({
         'index'                     : 'index',
         'top-nav-bar-view'          : 'views/top-nav-bar-view',
         'send-prescription-view'    : 'views/send-prescription-view',
-        'file-system'               : 'phonegap/file-system'
+        'fileSystem'               : 'phonegap/fileSystem'
   
     },
 

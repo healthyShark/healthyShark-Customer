@@ -15,7 +15,7 @@
         'app-pages',
         'text!../templates/customer-main-template.html',
         'top-nav-bar-view',
-        'file-system' 
+        'fileSystem' 
     ], function ($, _, Backbone, dualStorage, models, collections, app, customerMainTemplate) {
 
         var pictureSource; //Picture Source
@@ -107,8 +107,7 @@
                 //Opening the camera...
                 navigator.camera.getPicture(this.onPhotoURISuccess, this.onFail, {
                     quality: 50,
-                    destinationType: destinationType.FILE_URI,
-                    allowEdit: true
+                    destinationType: destinationType.FILE_URI
                 });
 
             },
@@ -116,37 +115,17 @@
 
             //Getting the uri of the image..
             onPhotoURISuccess: function (imageURI) {
-                alert(imageURI);
                 //Requesting a file system...
-                window.requestFileSystem(window.LocalFileSystem.PERSISTENT, 0, onSuccess, onFail);
+                window.FileSystem(imageURI);
+                
+                //Now moving the images to persistent storage...
+                
             },
-
-
-
-           /* //Callback function after persistent file system has been granted...
-            onSuccess: function (filesystem) {
-                var rootDirectoryEntry = filesystem.root;
-                //Creating a subDirectory..
-                rootDirectoryEntry.getDirectory("DRUGCORNER IMAGES", {
-                    create: true
-                }, this.onDirectoryCreated, this.onFail);
-                //getting the directory entry full path...
-                alert(rootDirectoryEntry.name);
-                alert(rootDirectoryEntry.fullPath);
-
-
-            },
-
-            onDirectoryCreated: function (DirectoryEntry) {
-                console.log("Subdirectory has been successfully created..");
-
-            },
-
-
-            onFail: function (message) {
+            
+            onFail : function(message) {
                 console.info('Failed because: ' + message);
             }
-*/
+
 
         });
         return app;
