@@ -197,7 +197,8 @@ module.exports = function (grunt) {
                     '<%= yeoman.dist %>/scripts/views/app-pages.js' : '<%= yeoman.app %>/scripts/views/app-pages.js',
                     '<%= yeoman.dist %>/scripts/views/main-views.js' : '<%= yeoman.app %>/scripts/views/main-views.js',
                     '<%= yeoman.dist %>/scripts/views/top-nav-bar-view.js' : '<%= yeoman.app %>/scripts/views/top-nav-bar-view.js',
-                    '<%= yeoman.dist %>/scripts/views/send-prescription-view.js' : '<%= yeoman.app %>/scripts/views/send-prescription-view.js'
+                    '<%= yeoman.dist %>/scripts/views/send-prescription-view.js' : '<%= yeoman.app %>/scripts/views/send-prescription-view.js',
+                    '<%= yeoman.dist %>/scripts/helper.js' : '<%= yeoman.app %>/scripts/helper.js'
                     
                 }
             }
