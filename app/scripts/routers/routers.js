@@ -9,15 +9,15 @@
         'jquery',
         'underscore',
         'backbone',
-        'backbone-model-file-upload',
         'dualStorage',
         'models',
         'collections',
         'app-pages',
         'main-views',
-        'send-prescription-view'
+        'send-prescription-view',
+        'add-more-view'
         
-    ],  function ($, _, Backbone, upload, dualStorage, models, collections, appPages, app , sendPrescriptionView ) {
+    ],  function ($, _, Backbone, dualStorage, models, collections, appPages, app , sendPrescriptionView ) {
         
             app.Routers =  app.Routers || {};
 
@@ -25,6 +25,7 @@
             app.Routers = Backbone.Router.extend({
 	            routes:{
                     "customer/sendPrescription"     :   "showSendPrescriptionView",
+                    "customer/addMore"              :   "addMorePrescriptionView",
                     "*path"                         :   "showMainView",
                     
                 },
@@ -66,7 +67,23 @@
                     var mainView = new app.View.customerMainView();
                     
                     mainElement.append(mainView.render().el);
+                },
+                
+                
+                addMorePrescriptionView : function(){
+                    //Closing the previous opened views...
+                    this.closePreviousViews();
+                    console.log("Add more prescription page is getting load...");
+                    //Loading the view..
+                    var mainElement = $('div.row.main-area');
+                     //Clearing the main screen...
+                    mainElement.empty();
+                    //Loading the view...
+                    var addMoreView = new app.View.customerAddMoreView();
+                    mainElement.append(addMoreView.render().el);
                 }
+                
+                
                 
             });//Router Closed..
         

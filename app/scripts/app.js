@@ -12,10 +12,11 @@ require.config({
         'backbone'                  : '../bower_components/backbone/backbone',
         'jquery'                    : '../bower_components/jquery/dist/jquery',
         'bootstrap'                 : '../bower_components/bootstrap/dist/js/bootstrap.min',
-        'backbone-model-file-upload': '../bower_components/backbone-model-file-upload/backbone-model-file-upload',
         'dualStorage'               : '../bower_components/Backbone.dualStorage/backbone.dualstorage',
         'text'                      : '../bower_components/text/text',
         'fastclick'                 : '../bower_components/fastclick/lib/fastclick',
+        'jquery-ui'                 : '../bower_components/jquery-ui/jquery-ui',
+        'jQuery-switchButton'       : '../bower_components/jQuery-switchButton/jquery.switchButton',
         
         /* My Javascript files */
         'models'                    : 'models/models',
@@ -25,9 +26,9 @@ require.config({
         'routers'                   : 'routers/routers',
         'app-main'                  : 'app-main/app-main',
         'dhoundhu-script'           : 'my-script',
-        'index'                     : 'index',
         'top-nav-bar-view'          : 'views/top-nav-bar-view',
         'send-prescription-view'    : 'views/send-prescription-view',
+        'add-more-view'             : 'views/add-more-view',
         'fileSystem'                : 'phonegap/fileSystem',
         'helper'                    : 'helper'
   
@@ -52,15 +53,11 @@ require.config({
         
         
         'dualStorage' : {
-            'deps'      : ['jquery', 'backbone', 'backbone-model-file-upload'],
+            'deps'      : ['jquery', 'backbone'],
             'exports'   : 'Backbone'
-        },
-        
-        'backbone-model-file-upload': {
-            deps    : ['jquery', 'underscore', 'backbone'],
-            exports : 'Backbone'
         }
         
+       
     }
     
 });

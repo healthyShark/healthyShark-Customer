@@ -9,15 +9,16 @@
         'jquery',
         'underscore',
         'backbone',
-        'backbone-model-file-upload',
         'dualStorage',
         'models',
         'collections'
-    ], function ($, _, Backbone, upload , dualStorage , appModel, app) {
+    ], function ($, _, Backbone,  dualStorage , appModel, app) {
         
         //Define all global variable to be used in the views here..
         app.Global = app.Global || {};
         
+        //Defiging global value for prescription collection for sending orders...
+        app.Global.prescriptionCollection =  new app.Collection.prescriptionImage;
         
         
         app.Global.showLoadingBar = function(){

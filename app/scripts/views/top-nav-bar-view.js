@@ -9,13 +9,12 @@
         'jquery',
         'underscore',
         'backbone',
-        'backbone-model-file-upload',
         'dualStorage',
         'models',
         'collections',
         'app-pages',
         'text!../templates/customer-main-navigation.html'
-    ], function ($, _, Backbone, upload , dualStorage , models, collections, app,  customerNavBarTemplate ) {
+    ], function ($, _, Backbone,  dualStorage , models, collections, app,  customerNavBarTemplate ) {
         
          //Define the views here..
         app.View = app.View || {};

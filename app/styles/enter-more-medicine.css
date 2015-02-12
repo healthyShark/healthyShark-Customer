@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*ENTER More Medicine*/
+.text {
+	color:#999;
+	font-size:35px;
+}
+.prescription-pic-container {
+	background-color:#FFF;
+	margin-bottom:60px;
+	box-shadow:3px 3px 10px #222;
+}
+.prescription-pic-div {
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #CCC;
+}
+.prescription-pic {
+	width:100%;
+	height:100%;
+}
+.prescription-notes {
+	color:#777;
+}
+
+.add-medicine-icon-align {
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:15px;
+/*    margin-bottom: 70px; */
+    margin-bottom: 10%;
+}
+
+.span-add-note {
+	padding-right:20px;
+}
+
+.span-days {
+	padding-left:20px;
+	text-align:center;
+	font-size:50px;
+	margin-bottom:60px;
+}
+
+.required-days {
+	text-align:center;
+}
+
+.ui-corner-all {
+	border-bottom-right-radius:100px;
+	border-bottom-left-radius:100px;
+	border-top-right-radius:100px;
+	border-top-left-radius:100px;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover {
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	top:-.5em;
+}
+.ui-slider-horizontal {
+	height:0.1em;
+}
+.ui-widget-content {
+	border:none;
+	background:#ff5500;
+	opacity:0.8;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+	border:none;
+	background:#ff5500;
+	opacity:0.8;
+	height:35px;
+	width:35px;
+}
+
+.add-note {
+	font-size:30px;
+	padding:20px 0 20px 0;
+	text-align:center;
+}
+textarea {
+ 		background: url(../images/notebookless480.png) repeat-y;
+ 		font: normal 22px verdana;
+ 		width:100%;
+ 		line-height: 42px;
+ 		padding: 0px 10px;
+		border:none;
+	}
+.remove-glyphicon {
+	float:right;
+	font-size:30px;
+	padding-right:5px;
+	padding-bottom:5px;
+	color:#AAA;
+	font-weight:normal;
+}
+
+
+/*ENTER more medicine*/
+
+
+
+/*----------------------------------------------------AREA FOR  ADJUSTMENT----------------------------------------------------*/
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+
+/* Samsung galaxy grand                 480 x 800                 */
+
+
+@media ( min-device-width : 480px) and (max-device-width: 570px)
+{
+    .circle {
+        height         : 170px; 
+        width          : 170px;
+        line-height    : 170px;
+        text-align     : center; 
+    }
+    
+    .icon-text{
+        font-size      : 90px;
+    }
+ 
+    .icon-desc{
+        font-size:25px;
+        margin-top:13px;
+        padding: 5px 15px 0 15px;
+    }
+	
+	.text {
+	font-size:35px;
+	}
+	
+	.span-days {
+	font-size:50px;
+	}
+	
+	.ui-state-default, .ui-widget-content .ui-state-default {
+		height:35px;
+		width:35px;
+	}
+	.ui-slider-horizontal .ui-slider-handle {
+		top:-1em;
+	}
+	
+	
+	.add-note {
+		font-size:30px;
+	}
+	
+	textarea {
+ 		background: url(../images/notebook480-570.png) repeat-y;
+ 		font: normal 30px verdana;
+ 		width:100%;
+ 		line-height: 52px;
+ 		padding: 0px 10px;
+ 		
+	}
+	.remove-glyphicon {
+		font-size:30px;
+		padding-right:5px;
+		padding-bottom:5px;
+	}
+
+ 
+}
+
+
+
+/*Increase all by 25%*/
+@media ( min-device-width : 571px) and (max-device-width: 649px)
+{
+    .circle {
+        height         : 210px; 
+        width          : 210px;
+        line-height    : 210px;
+        text-align     : center; 
+    }
+    
+    .icon-text{
+        font-size      : 112px;
+    }
+  
+    .icon-desc{
+        font-size:31px;
+        margin-top:17px;
+        padding: 0 15px 0 15px;
+    }
+	
+	.text {
+		font-size:43px;
+	}
+	
+	.span-days {
+		font-size:62px;
+	}
+	
+	.ui-state-default, .ui-widget-content .ui-state-default {
+		height:43px;
+		width:43px;
+	}
+	.ui-slider-horizontal .ui-slider-handle {
+		top:-1.3em;
+	}
+	
+	.add-note {
+		font-size:37px;
+	}
+	textarea {
+ 		background: url(../images/notebook650-770.png) repeat-y;
+ 		font: normal 35px verdana;
+ 		width:100%;
+ 		line-height: 60px;
+ 		padding: 0px 10px;
+ 		
+	}
+	.remove-glyphicon {
+		font-size:35px;
+		padding-right:5px;
+		padding-bottom:5px;
+	}
+	
+}
+
+
+/*25% increment on previous*/
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+/* Samsung galaxy grand 2               720 x 1280                */
+/* Moto g                               720 x 1280                */
+@media ( min-device-width : 650px) and (max-device-width: 770px)
+{
+    
+    .circle {
+        height         : 250px; 
+        width          : 250px;
+        line-height    : 250px;
+        text-align:    : center;
+    }
+    
+     .icon-text{
+        font-size      : 137px;
+    }
+ 
+    .icon-desc{
+            font-size   : 40px;
+            margin-top  : 13px;
+            padding     : 15px 15px 0 15px;
+    }
+	
+	.text {
+		font-size:54px;
+	}
+	
+	.span-days {
+		font-size:77px;
+	}
+	
+	.ui-state-default, .ui-widget-content .ui-state-default {
+		height:53px;
+		width:53px;
+	}
+	.ui-slider-horizontal .ui-slider-handle {
+		top:-1.6em;
+	}
+	
+	.add-note {
+		font-size:45px;
+	}
+	textarea {
+ 		background: url(../images/notebook650-770.png) repeat-y;
+ 		font: normal 40px verdana;
+ 		width:100%;
+ 		line-height: 60px;
+ 		padding: 0px 10px;
+ 		
+	}
+	.remove-glyphicon {
+		font-size:40px;
+		padding-right:5px;
+		padding-bottom:5px;
+	}
+    
+	
+	
+}
+
+/*15% Increment*/
+/*APPROX 25 PERCENTAGE INCREASE IN  VALUE OF PREVIOUS SUPPORTED VALUES */
+/*Supported devices with actual screen resolutions 960px and above */
+
+/* IPhone 6                             960 x 1704                */
+
+@media ( min-device-width : 771px)
+{
+    
+    .circle {
+        height         : 290px; 
+        width          : 290px;
+        line-height    : 290px;
+        text-align:    : center;
+    }
+    
+    .icon-text{
+        font-size      : 158px;
+    }
+    
+
+    .icon-desc{
+            font-size   : 46px;
+            margin-top  : 15px;
+            padding     : 0 15px 0 15px;
+            letter-spacing: 3px;
+    }
+	
+	.text {
+		font-size:55px;
+	}
+	
+	.span-days {
+		font-size:87px;
+	}
+	
+	.ui-state-default, .ui-widget-content .ui-state-default {
+		height:61px;
+		width:61px;
+	}
+	.ui-slider-horizontal .ui-slider-handle {
+		top:-1.9em;
+	}
+	
+	.add-note {
+		font-size:50px;
+	}
+	
+	textarea {
+ 		background: url(../images/notebook771.png) repeat-y;
+ 		font: normal 50px verdana;
+ 		width:100%;
+ 		line-height: 78px;
+ 		padding: 0px 10px;
+ 	
+	}
+	.remove-glyphicon {
+		font-size:45px;
+		padding-right:5px;
+		padding-bottom:5px;
+	}
+    
+
+}
+/*---------------------------------------------------------AREA ENDS FOR ADJUSTMENT-------------------------------*/

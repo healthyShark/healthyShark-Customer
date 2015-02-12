@@ -53,6 +53,5 @@ node_modules
 .tmp/
 phonegap/
 test/
-app/bower_components/
 dist/
 

@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.progress-bar {
+	height:20%;
+}
+
+
+/*----------------------------------------------------AREA FOR  ADJUSTMENT----------------------------------------------------*/
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+
+/* Samsung galaxy grand                 480 x 800                 */
+
+
+@media ( min-device-width : 480px) and (max-device-width: 570px)
+{
+   
+   
+   	.progress-bar {
+		height:20%;
+	}
+    
+    
+
+}
+
+
+
+/*Increase all by 25%*/
+@media ( min-device-width : 571px) and (max-device-width: 649px)
+{
+  
+	.progress-bar {
+		height:20%;
+	}
+   
+    
+    
+
+}
+
+
+/*25% increment on previous*/
+
+/*Supported devices with actual screen resolutions not the base resolution*/
+/* Samsung galaxy grand 2               720 x 1280                */
+/* Moto g                               720 x 1280                */
+@media ( min-device-width : 650px) and (max-device-width: 770px)
+{
+  
+	.progress-bar {
+		height:25%;
+	}
+    
+
+}
+
+/*15% Increment*/
+/*APPROX 25 PERCENTAGE INCREASE IN  VALUE OF PREVIOUS SUPPORTED VALUES */
+/*Supported devices with actual screen resolutions 960px and above */
+
+/* IPhone 6                             960 x 1704                */
+
+@media ( min-device-width : 771px)
+{
+   
+	.progress-bar {
+		height:25%;
+	}
+	
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------AREA ENDS FOR ADJUSTMENT-------------------------------*/
+
+
+
+
+
+
+/*HOME PAGE ADJUSTMENT*/
+
+

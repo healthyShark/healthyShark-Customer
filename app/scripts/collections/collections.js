@@ -9,11 +9,10 @@
         'jquery',
         'underscore',
         'backbone',
-        'backbone-model-file-upload',
         'dualStorage',
         'models'
         
-    ], function ($, _, Backbone, upload, dualStorage, app) {
+    ], function ($, _, Backbone, dualStorage, app) {
         
         app.Collection       = app.Collection  || {};
         
@@ -39,6 +38,7 @@
         
         
         app.Collection.prescriptionImage = Backbone.Collection.extend({
+//            remote: true,
             model : app.Model.prescriptionImage,
             url   : '/customers/PrescriptionImage'
             

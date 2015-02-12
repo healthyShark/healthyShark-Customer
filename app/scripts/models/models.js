@@ -1,6 +1,6 @@
 ! function () {
     "use strict";
-    define(["jquery", "underscore", "backbone", "backbone-model-file-upload", "dualStorage"], function ($, _, Backbone) {
+    define(["jquery", "underscore", "backbone", "dualStorage"], function ($, _, Backbone) {
         var app = window.app || {};
         return app.Model = app.Model || {}, app.Model.user = Backbone.Model.extend({
             defaults: {
@@ -51,10 +51,11 @@
                 status: ""
             }
         }), app.Model.prescriptionImage = Backbone.Model.extend({
+        
             defaults: {
                 id: null,
                 imageLink: "",
-                notes: ""
+                notes: null
             },
             urlRoot: "/customers/PrescriptionImage"
         }), app.Model.ManualEntry = Backbone.Model.extend({

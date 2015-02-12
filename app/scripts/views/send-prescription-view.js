@@ -15,12 +15,12 @@
         'app-pages',
         'text!../templates/customer-main-template.html',
         'top-nav-bar-view',
-        'fileSystem' 
+        'fileSystem'
     ], function ($, _, Backbone, dualStorage, models, collections, app, customerMainTemplate) {
 
         var pictureSource; //Picture Source
         var destinationType; //Set the format of the returned value..
-       
+
 
         //Define the views here..
         app.View = app.View || {};
@@ -52,8 +52,6 @@
                 "touchstart #fromGallery": "onGallerySelected",
                 "touchstart #fromCamera": "onCameraSelected"
             },
-
-
 
 
 
@@ -117,12 +115,10 @@
             onPhotoURISuccess: function (imageURI) {
                 //Requesting a file system...
                 window.FileSystem(imageURI);
-                
-                //Now moving the images to persistent storage...
-                
+
             },
-            
-            onFail : function(message) {
+
+            onFail: function (message) {
                 console.info('Failed because: ' + message);
             }
 

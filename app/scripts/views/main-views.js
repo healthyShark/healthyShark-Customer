@@ -9,14 +9,13 @@
         'jquery',
         'underscore',
         'backbone',
-        'backbone-model-file-upload',
         'dualStorage',
         'models',
         'collections',
         'app-pages',
         'text!../templates/customer-main-template.html',
         'top-nav-bar-view'
-    ], function ($, _, Backbone, upload , dualStorage , models, collections, app, customerMainTemplate) {
+    ], function ($, _, Backbone, dualStorage , models, collections, app, customerMainTemplate) {
         
             //Define the views here..
             app.View = app.View || {};
@@ -40,9 +39,9 @@
                 
                 events: {
 	                //Event for button working..
-                    "touchstart #sendPrescription"     : "onSendPrescription",
-                    "touchstart #manualEntry"          : "onManualEntry",
-                    "touchstart #callUs"               : "onCallUs"
+                    "click #sendPrescription"     : "onSendPrescription",
+                    "click  #manualEntry"          : "onManualEntry",
+                    "click #callUs"               : "onCallUs"
                 },
             
             

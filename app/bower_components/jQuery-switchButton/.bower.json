@@ -1,0 +1,14 @@
+{
+  "name": "jQuery-switchButton",
+  "homepage": "https://github.com/olance/jQuery-switchButton",
+  "_release": "de704ff1c0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "de704ff1c088e20ce528dff23a26162c439762b0"
+  },
+  "_source": "https://github.com/olance/jQuery-switchButton.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/olance/jQuery-switchButton.git",
+  "_direct": true
+}
